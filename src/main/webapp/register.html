@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Register</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+    <div class="title">Registration</div>
+    <div class="content">
+      <form action="register" method="post" >
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" name="fName" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Username</span>
+            <input type="text" placeholder="Enter your username" name="uName" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Address</span>
+            <input type="text" placeholder="Enter your Address" name="address" required>
+          </div>
+              <div class="input-box">
+            <span class="details">Marital Status</span>
+            <select name="status">
+            	<option>Single</option>
+            	<option>Married</option>
+            	<option>Divorce</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" placeholder="Enter your password" name="pass" id="Password" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="password" placeholder="Confirm your password" name="cPass" id="ComPassword" required>
+          </div>
+        </div>
+         <div class="all-details">
+          <input type="radio" name="quli" value ="Ordinary Level" id="dot-1">
+          <input type="radio" name="quli" value ="Advance Level" id="dot-2">
+          <span class="all-title">Qualification</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="all">O/L</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="all">A/L</span>
+          </label>
+          <label for="dot-3">
+            <span class="all"></span>
+            </label>
+          </div>
+        </div>
+        
+        
+        <div class="all-details">
+          <input type="checkbox" name="dip" value ="Diploma" id="dots-1">
+          <input type="checkbox" name="deg" value ="Degree" id="dots-2">
+          <input type="checkbox" name="mas" value ="Masters" id="dots-3">
+          <span class="all-title">Higher Education</span>
+          <div class="category">
+            <label for="dots-1">
+            <span class="dots one"></span>
+            <span class="all">Diploma</span>
+          </label>
+          <label for="dots-2">
+            <span class="dots two"></span>
+            <span class="all">Degree</span>
+          </label>
+          <label for="dots-3">
+            <span class="dots three"></span>
+            <span class="all">Masters</span>
+            </label>
+          </div>
+          
+        </div>
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+        <div class="signup_link">Already member? <a href="index.html">Login</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
